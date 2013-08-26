@@ -1,5 +1,5 @@
 /* global */
-body { background: url('http://active.fashionguide.com.tw/resource/demo_ad/images/sk2/sk2_bg.gif') center top no-repeat; font-size: 13px; font-family: "MS PGothic", Arial, sans-serif; line-height: 18px;background-color: #F7F4F0;}
+body { background: url('../resource/sk2_bg.gif') center top no-repeat; font-size: 13px; font-family: "MS PGothic", Arial, sans-serif; line-height: 18px;background-color: #F7F4F0;}
 a { color: #212020; text-decoration: none;}
 a:hover {color: #ff1e73; text-decoration: none; }
 .ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
