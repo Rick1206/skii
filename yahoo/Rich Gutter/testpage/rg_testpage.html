@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>動感摩天門測試頁</title>
+
+<style>
+html,body{
+	margin:0;
+	padding:0;
+	background:#000;}
+#main{
+	width:970px;
+	position: relative;
+	margin:0 auto;
+	z-index:100;}
+#news #top{
+	background:url(news_header_bg.jpg) top center no-repeat;
+	height:183px;
+	}
+#news #bottom{
+	background:url(news_footer_bg.jpg) top center no-repeat;
+	height:566px;
+	}
+
+#omg #top{
+	background:url(omg_header_bg.jpg) top center no-repeat;
+	height:225px;
+	}
+#omg #bottom{
+	background:url(omg_footer_bg.jpg) top center no-repeat;
+	height:418px;
+	}
+
+#sport #top{
+	background:url(sport_header_bg.jpg) top center no-repeat;
+	height:200px;
+	}
+#sport #bottom{
+	background:url(sport_footer_bg.jpg) top center no-repeat;
+	height:418px;
+	}
+
+#fashion #top{
+	background:url(fashion_header_bg.jpg) top center no-repeat;
+	height:183px;
+	}
+#fashion #bottom{
+	background:url(fashion_footer_bg.jpg) top center no-repeat;
+	height:418px;
+	}
+
+#mv #top{
+	background:url(mv_header_bg.jpg) top center no-repeat;
+	height:163px;
+	}
+#mv #bottom{
+	background:url(mv_footer_bg.jpg) top center no-repeat;
+	height:418px;
+	}
+
+#socialgame #top{
+	background:url(socialgame_header_bg.jpg) top center no-repeat;
+	height:135px;
+	}
+#socialgame #bottom{
+	background:url(socialgame_footer_bg.jpg) top center no-repeat;
+	height:418px;
+	}
+
+#auto #top{
+	background:url(auto_header_bg.jpg) top center no-repeat;
+	height:218px;
+	}
+#auto #bottom{
+	background:url(auto_footer_bg.jpg) top center no-repeat;
+	height:418px;
+	}
+
+#music #top{
+	background:url(music_header_bg.jpg) top center no-repeat;
+	height:185px;
+	}
+#music #bottom{
+	background:url(music_footer_bg.jpg) top center no-repeat;
+	height:418px;
+	}
+#tech #top{
+	background:url(tech_header_bg.jpg) top center no-repeat;
+	height:198px;
+	}
+#tech #bottom{
+	background:url(tech_footer_bg.jpg) top center no-repeat;
+	height:418px;
+	}
+
+
+
+#rg_315{
+	height:315px;}
+#wallpaper{
+		position:absolute;
+		left:50%;
+		width:1290px;
+		top:0;
+		z-index:10;
+		margin-left:-645px;
+		}
+</style>
+
+
+</head>
+
+<body id="news">
+
+<div id="wallpaper">
+  <object id="Flash_wallpaper" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1290" height="600">
+    <param name="movie" value="template_flash_wallpaper.swf" />
+    <param name="quality" value="high" />
+    <param name="wmode" value="opaque" />
+    <param name="swfversion" value="8.0.35.0" />
+  <embed src="template_flash_wallpaper.swf" type="application/x-schockwave-flash" width="1290" height="600" name="Flash_wallpaper" swLiveConnect="true"/>
+  </object></div>
+<div id="main">
+
+<div id="top">
+<div style="position:absolute; left:0; top:50px; z-index:300; background:#000000; width:100%; opacity:0.9; padding:5px 0; ">
+<select name="" id="location" onchange="changeLocation(this.value)"> 
+<option value="news">新聞</option>
+<option value="omg">名人娛樂</option>
+<option value="sport">運動</option>
+<option value="fashion">時尚</option>
+<option value="mv">電影</option>
+<option value="socialgame">社群遊戲</option>
+<option value="auto">汽車</option>
+<option value="music">音樂</option>
+<option value="tech">科技</option>
+</select>
+<button  onclick="PlayFlashMovie()" style="margin-left:5px;">播放</button><button  onclick="StopFlashMovie()" style="margin-left:5px;" >暫停</button><button  onclick="RewindFlashMovie()"  style="margin-left:5px;" >停止</button>  <br/><span style="color:#f00; font-size:12px;">1.此測試頁僅提供對位使用，並不包含完整的演繹結果。複雜的MovieClip動畫會無法暫停檢視。<br/>
+2.建議使用FireFox預覽。<br/>3.隨著時間，頻道亦可能header高度有變動，不保證此測試頁面會與線上情況即時同步。</span>
+</div>
+</div>
+<div id="rg_315">
+  <object id="Flash_315" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="970" height="315">  
+    <param name="movie" value="template_flash_wallpaper_950x315.swf" />
+    <param name="quality" value="high" />
+    <param name="wmode" value="opaque" />
+    <param name="swfversion" value="8.0.35.0" />
+    <param name="expressinstall" value="Scripts/expressInstall.swf" />
+  <embed src="template_flash_wallpaper_970x315.swf" type="application/x-schockwave-flash" width="970" height="315"  name="Flash_315" swLiveConnect="true"/>
+  </object>
+</div>
+<div id="bottom"></div>
+</div>
+
+<script type="text/javascript">
+
+
+function changeLocation(location){
+document.getElementsByTagName("body")[0].setAttribute("id",location);
+}
+
+function getFlashMovieObject(movieName)  
+ {  
+   if (window.document[movieName]) {  
+       return window.document[movieName];  
+   }  
+
+   if (navigator.appName.indexOf("Microsoft Internet")==-1)  {  
+     if (document.embeds && document.embeds[movieName])  
+       return document.embeds[movieName];  
+   }else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)  
+   {  
+     return document.getElementById(movieName);  
+   }  
+ } 
+
+var flashMovie1=getFlashMovieObject("Flash_315");
+var flashMovie2=getFlashMovieObject("Flash_wallpaper");
+
+function PlayFlashMovie(){
+	flashMovie1.Play();
+	flashMovie2.GotoFrame(2)
+	flashMovie2.TPlay("_flash0/creative_mc")
+}
+
+function StopFlashMovie(){
+	 flashMovie1.StopPlay();
+	 flashMovie2.TStopPlay("_flash0/creative_mc")
+	 }
+function RewindFlashMovie()
+{
+	flashMovie1.Rewind();
+	flashMovie2.Rewind();
+}
+</script>
+
+
+
+</body>
+</html>

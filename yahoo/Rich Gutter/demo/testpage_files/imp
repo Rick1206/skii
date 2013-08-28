@@ -1,0 +1,7 @@
+document.write('<a target=\"_blank\" href=\"http://ad.yieldmanager.com/clk?3,eJytUsuOozAQ.JrcssjGPBXtwQESkUAyQxiU5IIIwxoS81gweX39tndmR5r7tiyrurrcbZeMyazIbVKgPLeK99MpR8UMa-hUmPjXSSdTNJvNiGXYNtJN3Z6emU-pP-LVzVleuT-nMlbbRcLoRzDqgeADv1hyd92nutl-lvMqGel.Cacdo.AT-3IuZa5Ft1dxv17o.EvmvpFjfOQbtyyDeM6PsSfCeMHDBy7DpYeDONfCenU-nPPnsU7OB.Z18ue0FKKbEDpRF7AYb08ZV7L-XXlkZdsqeVsDvfOXE-Jivc8zoesImBByE5uqqSpYs5GlGxIYxNKwBgDbtkEM0LmgE7f00tZM9oHMNm1VVw2swdAg8hyg0wcXUKFl80x21hubX5z02EZM3KpA7JabRJOtDiBZ--EWoLd.kfchKsIq0okNVCAvtI8Ojz7u8mbvXPdNEv8-0zVzkwfnuucZ1yQYwNLoDvI5yLt1Ym2a-7Brbj-AWv1riQkhNrJNZMrGa6AdYyD3bNzt37qxw6-jUxtVKS2jUDR0bMHngSyCDP01Emrad2fFTen6tm5F1TbDN3PlI4aMFwPgvspLNgpR9KkoBlE10rWepRZBhkZSeK2qWqngeQqGKqWo-R91-tKP,\"><img border=\"0\" alt=\"\" height=\"250\" width=\"300\" src=\"http://content.yieldmanager.edgesuite.net/atoms/b8/41/83/1f/b841831fe52be489eadf450df5a5fde5.jpg\"></img></a>');
+var rm_data = new Object();
+rm_data.creative_id = 22199942;
+rm_data.offer_type = 20;
+rm_data.entity_id = 866209;
+
+if (window.rm_crex_data) {rm_crex_data.push(22199942);}
