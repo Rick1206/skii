@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<title>Demo</title>
+<script type="text/javascript">
+
+var changenum=false;
+var opencontrol=false;
+function addnum(){
+changenum=!changenum;
+}
+function openpanel(){
+opencontrol=!opencontrol;
+	}
+function closetab(){
+ return  opencontrol;
+	}
+function getnum(){
+ return  changenum;
+}
+
+</script>
+<style type="text/css" media="screen">
+<!--
+body {
+	background:url(yahoo.jpg) no-repeat center top;
+	padding:0;
+	margin:0;
+	height:834px;
+	overflow:hidden;
+}
+.tagline {
+	position:absolute;
+	left:0;
+}
+.side {
+	top:300px;
+	z-index:2;
+	
+}
+.crazy {
+	top:215px;
+	z-index:3;
+
+}
+#box {
+	height:834px;
+	width:100%;
+	background-color:#666;
+	position:absolute;
+	top:0;
+	left:0;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+#info {
+	position:relative;
+	margin:4em auto;
+	background-color:#666;
+	border:2px solid #999;
+	padding:1.5em 0;
+	font-size:20px;
+	text-align:center;
+	color:#FFF;
+	line-height:1.5em;
+	letter-spacing:0.1em;
+}
+#mask{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:400px;
+	height:400px;
+	z-index:99;
+
+	}
+#b{
+	display:block;}
+-->
+</style>
+</head>
+<body>
+<div>
+ <div id="box"></div>
+  <p  id="info" >此DEMO頁面非實際上線的演繹方式,僅是方便製作時對位crazy flash,<br/>
+    演繹也以一次為限,需再次預覽請重新整理頁面!!!(建議以firefox瀏覽器來正確預覽)</p>
+  <div class="side tagline" id="a" >
+  
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="950" height="315">
+      <param name="movie" value="tagline_panel.swf" />
+      <param name="quality" value="high" />
+      <param name="wmode" value="transparent" />
+      <param name="FlashVars" value="clickTAG=http://www.yahoo.com.tw" />
+      <embed src="tagline_panel.swf" quality="high" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="950" height="315" FlashVars="clickTAG=http://www.yahoo.com.tw" ></embed>
+    </object>
+  
+  </div>
+  <div class="crazy tagline" id="b" >
+  <div style="position:relative;">
+  
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="400" height="400" >
+      <param name="movie" value="tagline_crazy.swf" />
+      <param name="quality" value="high" />
+      <param name="wmode" value="transparent" />
+      <param name="FlashVars" value="clickTAG=http://www.yahoo.com.tw" />
+      <embed src="tagline_crazy.swf" quality="high" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="400" height="400" FlashVars="clickTAG=http://www.yahoo.com.tw"></embed>
+    </object>
+      </div>
+  </div>
+</div>
+<script type="text/javascript">
+   document.getElementById("b").onclick=function(){
+
+this.style.display="none";
+
+	}    
+</script>
+</body>
+</html>
